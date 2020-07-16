@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+
+
+
+*{padding: 0; margin: 0; position: relative;
+font-family: 'Noto Sans KR', sans-serif;}
+img{}
+ol,ul,li{list-style: none;}
+a{cursor: pointer; text-decoration: none;}
+button{}
+input{}
+body{}
+
+
+
+/*--works--------------------------------------------*/
+
+.works{width: 100%; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #000;}
+.works .text-group{color: #fff;}
+.works .text-group p{text-align: center; font-size: 50px; font-weight: 900; text-transform: uppercase;}
+.works .text-group p:first-child{text-align: center; font-size: 150px; font-weight: 900; text-transform: uppercase;}
+.works .text-group ol{display: flex; text-align: center; justify-content: center;}
+.works .text-group ol p{font-size: 50px!important; padding: 20px;}
+
+.right-probar{position: fixed; top: calc(50% - 25%); right: 0; height: 50%; width: 80px; z-index: 9000;}
+
+.right-probar .right-probar-group{width: 100%; height: 100%; display: flex; flex-direction: column; justify-items: center; justify-content: center;}
+.right-probar .right-probar-group .right-pro-base{height: 100%; width: 1px; background: #333; position: absolute; left: calc(50% - .5px); top: 0;}
+.right-probar .right-probar-group .right-pro-down{height: 0%; width: 3px; background: #fff; position: absolute; left: calc(50% - 1.5px); top: 0;}
+
+.works-slide{width: 100%; height: 100vh; background: #000;}
+.works-slide .slide-group{width: 200%; height: 50%; position: absolute; left: calc(50% - 25%); padding: 0!important; top: calc(50% - 25%); display: flex; background: #000;}
+.works-slide .slide-frame{display: flex; width: 500%; height: 100%;}
+.works-slide .slide{width: 100%; overflow: hidden; padding: 30px;}
+.works-slide .slide .text-box{position: absolute; top: 0; left: 0;  width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.works-slide .slide .text-box p a{color: #fff; font-size: 100px; font-family: 'Roboto', sans-serif; font-weight: 500; color: #fff;}
+.works-slide .slide img{width: 100%;}
+
+.pro-frame{width: 30%; height: 20px; position: fixed; bottom: calc(0% - 50px); left: calc(50% - 15%); z-index: 8000;
+}
+
+.pro-frame .pro-base{position: absolute; top: calc(50% - .5px); left: 0; background: #333; width: 100%; height: 1px;}
+.pro-frame .pro-up{position: absolute; top: calc(50% - 1.5px); left: 0; background: #fff; width: 0%; height: 3px;}
+
+
+
+@media (max-width : 600px){
+    .works .text-group p{font-size: 24px;}
+    .works .text-group p:first-child{font-size: 80px;}
+    .works .text-group ol{display: flex; flex-direction: column;}
+    .works .text-group ol p{font-size: 24px!important;}
+    .works-slide .slide .text-box p a{font-size: 30px;}
+}
+
