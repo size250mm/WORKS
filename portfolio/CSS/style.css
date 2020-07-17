@@ -35,7 +35,7 @@ body{}
 .works-slide .slide-frame{display: flex; width: 500%; height: 100%;}
 .works-slide .slide{width: 100%; overflow: hidden; padding: 30px;}
 .works-slide .slide .text-box{position: absolute; top: 0; left: 0;  width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
-.works-slide .slide .text-box p a{color: #fff; font-size: 100px; font-family: 'Roboto', sans-serif; font-weight: 500; color: #fff;}
+.works-slide .slide .text-box p{color: #fff; font-size: 100px; font-family: 'Roboto', sans-serif; font-weight: 500; color: #fff;}
 .works-slide .slide img{width: 100%;}
 
 .pro-frame{width: 30%; height: 20px; position: fixed; bottom: calc(0% - 50px); left: calc(50% - 15%); z-index: 8000;

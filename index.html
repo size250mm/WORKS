@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio/CSS/style.css">
     <link rel="stylesheet" href="general/navstyle.css">
+    <link rel="stylesheet" href="general/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <style>
@@ -15,9 +16,21 @@
     
 </head>
 <body>
+<div class="open-box sub-open"></div>
+<div class="open-box sub-open-pr"></div>
+
+<div class="sub-ani">
+       <div class="box-eff left-box"></div>
+       <div class="box-eff right-box"></div>
+</div>
+       <div class="wipe-box left-box-wipe"></div>
+       <div class="wipe-box left-box-wipe-pr"></div>
+       <div class="wipe-box right-box-wipe"></div>
+       <div class="wipe-box right-box-wipe-pr"></div>
 <div class="cursor-base">
     <div class="cursor-eff1"></div>
     <div class="cursor-text"></div>
+    <div class="cursor-text-left"></div>
     <div class="cursor-eff2"></div>
 </div>
    <div class="right-probar">
@@ -29,17 +42,17 @@
   <div class="ham-list row">
      <div class="ham-list-wrap col-xs-4 col-sm-6 col-md-8">
          <ol>
-           			<li id="cover">
-				<a href="https://size250mm.github.io/COVER/.">cover</a>
+           	<li class="next-cover">
+				cover
 			</li>
-			<li id="about">
-				<a href="https://size250mm.github.io/ABOUT/.">about</a>
+			<li class="next-about">
+				about
 			</li>
-			<li id="works">
-				<a href="https://size250mm.github.io/WORKS/.">portfolio</a>
+			<li class="next-works">
+				portfolio
 			</li>
-			<li id="contact">
-				<a href="https://size250mm.github.io/CONTACT/.">contact</a>
+			<li class="next-contact">
+				contact
 			</li>
          </ol>
      </div>
@@ -70,16 +83,20 @@
            <div class="nav-logo"></div>
        </div>
    </nav>
+       <nav class="page-btn">
+        <div class="page-btn1 next-about"><button>- ABOUT</button></div>
+        <div class="page-btn2 next-contact"><button>CONTACT -</button></div>
+    </nav>
  
     <div class="works row">
       <div class="text-group col-xs-12 col-sm-12 col-md-12">
-                <p>works</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">works</p>
                 <ol> 
-                <p>nikon</p>
-                <p>trairline</p>
-                <p>cgv</p>
-                <p>prugio</p>
-                <p>hansam</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200" class="next-nikon">nikon</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200" class="next-tr">trairline</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400" class="next-cgv">cgv</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600" class="next-prugio">prugio</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800" class="next-hanssam">hanssam</p>
                 </ol>
       </div>
     </div>
@@ -93,23 +110,23 @@
            <div class="slide-frame">
             <div class="slide slide1">
                 <img src="portfolio/IMGS/po1.png" alt="#">
-                <div class="text-box"><p><a href="https://size250mm.github.io/PRE-NIKON/.">NIKON</a></p></div>
+                <div class="text-box"><p class="next-nikon">NIKON</p></div>
             </div>
             <div class="slide slide2">
                 <img src="portfolio/IMGS/po2.png" alt="#">
-                <div class="text-box"><p><a href="https://size250mm.github.io/PRE-TR/.">TRAIRLINE</a></p></div>
+                <div class="text-box"><p class="next-tr">TRAIRLINE</p></div>
             </div>
             <div class="slide slide3">
                 <img src="portfolio/IMGS/po3.png" alt="#">
-                <div class="text-box"><p><a href="https://size250mm.github.io/PRE-CGV/.">CGV</a></p></div>
+                <div class="text-box"><p class="next-cgv">CGV</p></div>
             </div>
             <div class="slide slide4">
                 <img src="portfolio/IMGS/po4.png" alt="#">
-                <div class="text-box"><p><a href="https://size250mm.github.io/PRE-PRUGIO/.">PRUGIO</a></p></div>
+                <div class="text-box"><p class="next-prugio">PRUGIO</p></div>
             </div>
             <div class="slide slide5">
                 <img src="portfolio/IMGS/po5.jpg" alt="#">
-                <div class="text-box"><p><a href="https://size250mm.github.io/PRE-HANSSAM/.">HANSAM</a></p></div>
+                <div class="text-box"><p class="next-hanssam">HANSSAM</p></div>
             </div>
         </div>
         </div>
@@ -120,3 +137,7 @@
 <script src="portfolio/SCRIPT/script.js"></script>
 <script src="general/nav-script.js"></script>
 <script src="general/mouse-script.js"></script>
+<script src="general/aos.js"></script>
+<script>
+AOS.init();
+</script>
